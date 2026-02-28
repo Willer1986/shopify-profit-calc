@@ -1,0 +1,4 @@
+neon tech
+DATABASE_URL="postgresql://neondb_owner:npg_lQtv5guBE7eD@ep-mute-cloud-aiee184s-pooler.c-4.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require"
+# uncomment next line if you use Prisma <5.10
+# DATABASE_URL_UNPOOLED="postgresql://neondb_owner:npg_lQtv5guBE7eD@ep-mute-cloud-aiee184s.c-4.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require"
