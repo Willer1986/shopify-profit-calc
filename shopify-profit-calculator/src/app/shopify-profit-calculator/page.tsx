@@ -3,38 +3,38 @@ import { ProfitCalculatorClient } from './ProfitCalculatorClient'
 import { calculatorSchema, faqSchema } from '@/lib/seo'
 
 export const metadata: Metadata = {
-  title: 'Shopify Profit Calculator – True Profit After All Fees',
+  title: 'Shopify Profit Calculator – True Profit After All Fees",
   description:
-    'Calculate your true Shopify profit. Factor in product cost, Shopify fees, payment processing, shipping, ad spend, and refunds. Free real-time calculator.',
+    'Calculate your true Shopify profit. Factor in product cost, Shopify fees, payment processing, shipping, ad spend, and refunds. Free real-time calculator.",
   keywords: [
-    'shopify profit calculator',
-    'shopify profit margin calculator',
-    'shopify net profit calculator',
-    'shopify profit after fees',
-  ].join(', '),
+    'shopify profit calculator",
+    'shopify profit margin calculator",
+    'shopify net profit calculator",
+    'shopify profit after fees",
+  ].join(", '),
   alternates: { canonical: '/shopify-profit-calculator' },
 }
 
 const faqs = [
   {
-    question: 'How does the Shopify profit calculator work?',
+    question: 'How does the Shopify profit calculator work?",
     answer:
-      'Enter your selling price, product cost, shipping, Shopify plan, ad spend, and refund rate. The calculator subtracts all fees and costs to show your net profit and margin in real time.',
+      'Enter your selling price, product cost, shipping, Shopify plan, ad spend, and refund rate. The calculator subtracts all fees and costs to show your net profit and margin in real time.",
   },
   {
-    question: 'What fees does Shopify charge per sale?',
+    question: 'What fees does Shopify charge per sale?",
     answer:
-      'Shopify charges a payment processing fee (2.9% + $0.30 on Basic) and optionally a transaction fee (2% on Basic) if you do not use Shopify Payments. Advanced plans have lower rates.',
+      'Shopify charges a payment processing fee (2.9% + $0.30 on Basic) and optionally a transaction fee (2% on Basic) if you do not use Shopify Payments. Advanced plans have lower rates.",
   },
   {
-    question: 'What is a good profit margin for Shopify stores?',
+    question: 'What is a good profit margin for Shopify stores?",
     answer:
-      'Most successful Shopify stores target 20-30%+ net profit margins. Margins below 15% leave little room for ad spend and growth. Below 10% is often unsustainable.',
+      'Most successful Shopify stores target 20-30%+ net profit margins. Margins below 15% leave little room for ad spend and growth. Below 10% is often unsustainable.",
   },
   {
-    question: 'Does this include Shopify subscription cost?',
+    question: 'Does this include Shopify subscription cost?",
     answer:
-      'The per-transaction calculator focuses on per-sale profitability. Your monthly Shopify subscription ($39–$399+) should be factored into your fixed overhead separately.',
+      'The per-transaction calculator focuses on per-sale profitability. Your monthly Shopify subscription ($39–$399+) should be factored into your fixed overhead separately.",
   },
 ]
 
@@ -46,8 +46,8 @@ export default function ProfitCalculatorPage() {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(
             calculatorSchema(
-              'Shopify Profit Calculator',
-              'Calculate true Shopify profit after all fees and costs',
+              'Shopify Profit Calculator",
+              'Calculate true Shopify profit after all fees and costs",
               '/shopify-profit-calculator'
             )
           ),
