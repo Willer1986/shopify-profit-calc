@@ -1,10 +1,8 @@
 import Stripe from 'stripe'
 
-if (!process.env.STRIPE_SECRET_KEY) {
-  throw new Error('Missing STRIPE_SECRET_KEY environment variable')
-}
+const stripeKey = process.env.STRIPE_SECRET_KEY || 'sk_placeholder'
 
-export const stripe = new Stripe(process.env.STRIPE_SECRET_KEY, {
+export const stripe = new Stripe(stripeKey, {
   apiVersion: '2023-10-16',
   typescript: true,
 })
@@ -16,28 +14,20 @@ export async function createCheckoutSession(userId: string, email: string) {
     mode: 'subscription',
     payment_method_types: ['card'],
     customer_email: email,
-    line_items: [
-      {
-        price: process.env.STRIPE_PRO_PRICE_ID!,
-        quantity: 1,
-      },
-    ],
-    success_url: `${APP_URL}/dashboard?upgraded=true`,
-    cancel_url:  `${APP_URL}/pricing?cancelled=true`,
+    line_items: [{ price: process.env.STRIPE_PRO_PRICE_ID!, quantity: 1 }],
+    success_url: APP_URL + '/dashboard?upgraded=true',
+    cancel_url: APP_URL + '/pricing?cancelled=true',
     metadata: { userId },
-    subscription_data: {
-      metadata: { userId },
-    },
+    subscription_data: { metadata: { userId } },
     allow_promotion_codes: true,
   })
-
   return session
 }
 
 export async function createPortalSession(customerId: string) {
   const session = await stripe.billingPortal.sessions.create({
     customer: customerId,
-    return_url: `${APP_URL}/dashboard`,
+    return_url: APP_URL + '/dashboard',
   })
   return session
 }
