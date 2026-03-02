@@ -24,7 +24,7 @@ const faqs = [
   {
     question: 'What fees does Shopify charge per sale?',
     answer:
-      'Shopify charges a payment processing fee (2.9% + $0.30 on Basic) and optionally a transaction fee (2% on Basic) if you don't use Shopify Payments. Advanced plans have lower rates.',
+      'Shopify charges a payment processing fee (2.9% + $0.30 on Basic) and optionally a transaction fee (2% on Basic) if you do not use Shopify Payments. Advanced plans have lower rates.',
   },
   {
     question: 'What is a good profit margin for Shopify stores?',
