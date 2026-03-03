@@ -33,7 +33,7 @@ export async function POST(req: NextRequest) {
 
       if (user?.plan === 'PRO') {
         const calc = await prisma.calculation.create({
-          data: { userId, ...data },
+          data: { userId, ...data } as any,
         })
         return NextResponse.json({ success: true, id: calc.id, remaining: -1 })
       }
