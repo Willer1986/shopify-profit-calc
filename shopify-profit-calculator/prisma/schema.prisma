@@ -1,0 +1,72 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id                   String    @id @default(cuid())
+  email                String    @unique
+  password             String
+  name                 String?
+  plan                 Plan      @default(FREE)
+  stripeCustomerId     String?   @unique
+  stripeSubscriptionId String?   @unique
+  subscriptionStatus   String?
+  dailyCount           Int       @default(0)
+  dailyResetAt         DateTime  @default(now())
+  createdAt            DateTime  @default(now())
+  updatedAt            DateTime  @updatedAt
+
+  calculations Calculation[]
+  sessions     Session[]
+
+  @@index([email])
+  @@index([stripeCustomerId])
+}
+
+model Session {
+  id        String   @id @default(cuid())
+  userId    String
+  token     String   @unique
+  expiresAt DateTime
+  createdAt DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@index([token])
+  @@index([expiresAt])
+}
+
+model Calculation {
+  id        String         @id @default(cuid())
+  userId    String
+  type      CalculatorType
+  name      String?
+  inputs    Json
+  results   Json
+  createdAt DateTime       @default(now())
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@index([userId, createdAt])
+  @@index([type])
+}
+
+enum Plan {
+  FREE
+  PRO
+}
+
+enum CalculatorType {
+  PROFIT
+  FEES
+  AD_PROFIT
+  MARGIN
+  BREAK_EVEN
+}
