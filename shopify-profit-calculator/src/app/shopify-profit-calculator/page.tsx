@@ -24,17 +24,17 @@ const faqs = [
   {
     question: 'What fees does Shopify charge per sale?',
     answer:
-      'Shopify charges a payment processing fee (2.9% + $0.30 on Basic) and optionally a transaction fee (2% on Basic) if you don't use Shopify Payments. Advanced plans have lower rates.',
+     'Shopify charges 2.9% + $0.30 on Basic, or 2.6% + $0.30 on Shopify plan. Advanced plans have lower rates.',
   },
   {
     question: 'What is a good profit margin for Shopify stores?',
     answer:
-      'Most successful Shopify stores target 20-30%+ net profit margins. Margins below 15% leave little room for ad spend and growth. Below 10% is often unsustainable.',
+      'Most successful Shopify stores target 20-30%+ net profit margins. Below 15% leaves little room for growth.',
   },
   {
     question: 'Does this include Shopify subscription cost?',
     answer:
-      'The per-transaction calculator focuses on per-sale profitability. Your monthly Shopify subscription ($39–$399+) should be factored into your fixed overhead separately.',
+     'The calculator focuses on per-sale profitability. Factor your monthly subscription ($39-$399+) separately.', 
   },
 ]
 
