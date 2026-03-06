@@ -19,7 +19,7 @@ const faqs = [
   {
     question: 'How does the Shopify profit calculator work?',
     answer:
-      'Enter your selling price, product cost, shipping, Shopify plan, ad spend, and refund rate. The calculator subtracts all fees and costs to show your net profit and margin in real time.',
+    'Enter your selling price, product cost, shipping, Shopify plan, ad spend, and refund rate to see your net profit.',
   },
   {
     question: 'What fees does Shopify charge per sale?',
