@@ -25,7 +25,7 @@ const faqs = [
     question: 'What fees does Shopify charge per sale?',
     answer:
       'Shopify charges 2.9% + $0.30 on Basic. Advanced plans have lower rates.',
-  },
+},
   {
     question: 'What is a good profit margin for Shopify stores?',
     answer:
