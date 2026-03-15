@@ -15,7 +15,7 @@ export default function ContactPage() {
       <ContactForm />
       <p className="text-sm text-gray-400 mt-6 text-center">
         Or email:{' '}
-        <a href="mailto:hello@shopifyprofitcalculator.com"
+        <a href="mailto:shoppifycalculatorprofit@gmail.com"
           className="text-brand-600 hover:underline">
           hello@shopifyprofitcalculator.com
         </a>
