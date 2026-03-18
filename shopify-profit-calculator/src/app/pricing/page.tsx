@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'Pricing – Free & Pro Plans',
-  description: 'Shopify Profit Calculator pricing. Free plan with 3 calculations/day. Pro plan at $9/month for unlimited calculations, save history, and CSV/JSON export.',
+  description: 'Shopify Profit Calculator pricing. Free plan with 3 calculations/day. Pro plan at $15/month for unlimited calculations, save history, and CSV/JSON export.',
   alternates: { canonical: '/pricing' },
 }
 
