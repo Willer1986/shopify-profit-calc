@@ -69,7 +69,7 @@ export default async function PricingPage() {
           <div className="mb-6">
             <div className="font-bold text-lg mb-1 text-brand-700">Pro</div>
             <div className="flex items-end gap-1">
-              <span className="text-4xl font-bold">$9</span>
+              <span className="text-4xl font-bold">$15</span>
               <span className="text-gray-500 text-base mb-1">/month</span>
             </div>
             <div className="text-gray-500 text-sm mt-1">Cancel anytime · Instant access</div>
