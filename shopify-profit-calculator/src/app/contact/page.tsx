@@ -17,7 +17,7 @@ export default function ContactPage() {
         Or email:{' '}
         <a href="mailto:shoppifycalculatorprofit@gmail.com"
           className="text-brand-600 hover:underline">
-          hello@shopifyprofitcalculator.com
+          shoppifycalculatorprofit@gmail.com
         </a>
       </p>
     </div>
