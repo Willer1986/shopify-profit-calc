@@ -1,111 +1,339 @@
-Privacy Policy
-Last updated: March 23, 2026  ·  Contact: shoppifycalculatorprofit@gmail.com
+export const metadata = {
+  title: "Privacy Policy | Shopify Profit Calc",
+  description:
+    "Privacy Policy for Shopify Profit Calc — how we collect, use, and protect your data.",
+};
 
-1. Introduction
-Shopify Profit Calc (“we”, “us”, or “our”) operates shopifyprofit.com. This Privacy Policy explains how we collect, use, and protect your information when you use our service. By using Shopify Profit Calc, you agree to the collection and use of information in accordance with this policy.
-2. Information We Collect
-Account data: When you register, we collect your email address and a hashed password. We do not store plain-text passwords.
+export default function PrivacyPage() {
+  return (
+    <main className="max-w-3xl mx-auto px-4 py-16">
+      {/* Language toggle hint */}
+      <p className="text-sm text-gray-400 mb-8">
+        🇬🇧 English below &mdash;{" "}
+        <a href="#french" className="underline hover:text-gray-600">
+          🇫🇷 Français plus bas
+        </a>
+      </p>
 
-Calculator data: All calculator inputs (selling price, costs, fees) are processed client-side in your browser. We do not transmit or store your financial inputs unless you are a Pro user who explicitly saves calculation history.
+      {/* ───────────────────── ENGLISH ───────────────────── */}
+      <section id="english">
+        <h1 className="text-3xl font-bold mb-2">Privacy Policy</h1>
+        <p className="text-sm text-gray-500 mb-10">
+          Last updated: March 23, 2026 &nbsp;·&nbsp; Contact:{" "}
+          <a
+            href="mailto:shoppifycalculatorprofit@gmail.com"
+            className="underline"
+          >
+            shoppifycalculatorprofit@gmail.com
+          </a>
+        </p>
 
-Payment data: Payments are processed by Stripe, Inc. We never store your credit card number or payment details on our servers.
+        <Section title="1. Introduction">
+          Shopify Profit Calc (&ldquo;we&rdquo;, &ldquo;us&rdquo;, or
+          &ldquo;our&rdquo;) operates shopifyprofit.com. This Privacy Policy
+          explains how we collect, use, and protect your information when you
+          use our service. By using Shopify Profit Calc, you agree to the
+          collection and use of information in accordance with this policy.
+        </Section>
 
-Usage data: We may collect anonymized usage statistics (page views, feature usage) to improve the service.
+        <Section title="2. Information We Collect">
+          <p>
+            <strong>Account data:</strong> When you register, we collect your
+            email address and a hashed password. We do not store plain-text
+            passwords.
+          </p>
+          <p className="mt-3">
+            <strong>Calculator data:</strong> All calculator inputs (selling
+            price, costs, fees) are processed client-side in your browser. We
+            do not transmit or store your financial inputs unless you are a Pro
+            user who explicitly saves calculation history.
+          </p>
+          <p className="mt-3">
+            <strong>Payment data:</strong> Payments are processed by Stripe,
+            Inc. We never store your credit card number or payment details on
+            our servers.
+          </p>
+          <p className="mt-3">
+            <strong>Usage data:</strong> We may collect anonymized usage
+            statistics (page views, feature usage) to improve the service.
+          </p>
+        </Section>
 
-3. How We Use Your Information
-We use collected data to:
+        <Section title="3. How We Use Your Information">
+          <p>We use collected data to:</p>
+          <ul className="list-disc ml-6 mt-2 space-y-1">
+            <li>Authenticate your account</li>
+            <li>
+              Send transactional emails (password reset, subscription
+              confirmation)
+            </li>
+            <li>Provide Pro features (saved history, CSV export)</li>
+            <li>Improve our service</li>
+          </ul>
+          <p className="mt-3">
+            We do not sell, rent, or share your personal data with third
+            parties for marketing purposes.
+          </p>
+        </Section>
 
-Authenticate your account
-Send transactional emails (password reset, subscription confirmation)
-Provide Pro features (saved history, CSV export)
-Improve our service
-We do not sell, rent, or share your personal data with third parties for marketing purposes.
+        <Section title="4. Cookies">
+          We use a single secure session cookie for authentication. We do not
+          use third-party tracking cookies or advertising cookies. You may
+          disable cookies in your browser, but this will prevent you from
+          logging in.
+        </Section>
 
-4. Cookies
-We use a single secure session cookie for authentication. We do not use third-party tracking cookies or advertising cookies. You may disable cookies in your browser, but this will prevent you from logging in.
-5. Data Retention
-Account data is retained for as long as your account is active. Pro calculation history is retained for 12 months or until you delete it. If you delete your account, all associated data is permanently removed within 30 days.
-6. Data Security
-We store data on secure servers in the United States. We use industry-standard encryption (TLS/HTTPS) for all data in transit. Passwords are hashed using bcrypt. We conduct regular security reviews.
-7. GDPR & Your Rights (EU/EEA Users)
-If you are located in the EU or EEA, you have the following rights:
+        <Section title="5. Data Retention">
+          Account data is retained for as long as your account is active. Pro
+          calculation history is retained for 12 months or until you delete it.
+          If you delete your account, all associated data is permanently removed
+          within 30 days.
+        </Section>
 
-Right to access your data
-Right to rectification
-Right to erasure (“right to be forgotten”)
-Right to data portability
-Right to object to processing
-To exercise any of these rights, email shoppifycalculatorprofit@gmail.com. We will respond within 30 days.
+        <Section title="6. Data Security">
+          We store data on secure servers in the United States. We use
+          industry-standard encryption (TLS/HTTPS) for all data in transit.
+          Passwords are hashed using bcrypt. We conduct regular security
+          reviews.
+        </Section>
 
-8. CCPA (California Users)
-California residents may request disclosure of personal information we collect, use, disclose, or sell. We do not sell personal information. To submit a request, email shoppifycalculatorprofit@gmail.com.
-9. Children's Privacy
-Shopify Profit Calc is not directed to children under 13. We do not knowingly collect personal information from children. If you believe we have inadvertently collected such information, please contact us immediately.
-10. Third-Party Services
-We use the following third-party services:
+        <Section title="7. GDPR & Your Rights (EU/EEA Users)">
+          <p>
+            If you are located in the EU or EEA, you have the following rights:
+          </p>
+          <ul className="list-disc ml-6 mt-2 space-y-1">
+            <li>Right to access your data</li>
+            <li>Right to rectification</li>
+            <li>Right to erasure (&ldquo;right to be forgotten&rdquo;)</li>
+            <li>Right to data portability</li>
+            <li>Right to object to processing</li>
+          </ul>
+          <p className="mt-3">
+            To exercise any of these rights, email{" "}
+            <a
+              href="mailto:shoppifycalculatorprofit@gmail.com"
+              className="underline"
+            >
+              shoppifycalculatorprofit@gmail.com
+            </a>
+            . We will respond within 30 days.
+          </p>
+        </Section>
 
-Stripe — payments
-Vercel — hosting
-Neon — database
-Each service has its own privacy policy.
+        <Section title="8. CCPA (California Users)">
+          California residents may request disclosure of personal information we
+          collect, use, disclose, or sell. We do not sell personal information.
+          To submit a request, email{" "}
+          <a
+            href="mailto:shoppifycalculatorprofit@gmail.com"
+            className="underline"
+          >
+            shoppifycalculatorprofit@gmail.com
+          </a>
+          .
+        </Section>
 
-11. Changes to This Policy
-We may update this Privacy Policy from time to time. We will notify registered users by email of material changes. Continued use of the service after changes constitutes acceptance.
-12. Contact
-Questions about this Privacy Policy?
+        <Section title="9. Children's Privacy">
+          Shopify Profit Calc is not directed to children under 13. We do not
+          knowingly collect personal information from children. If you believe
+          we have inadvertently collected such information, please contact us
+          immediately.
+        </Section>
 
-Email: shoppifycalculatorprofit@gmail.com
+        <Section title="10. Third-Party Services">
+          <p>We use the following third-party services:</p>
+          <ul className="list-disc ml-6 mt-2 space-y-1">
+            <li>
+              <a href="https://stripe.com/privacy" className="underline">
+                Stripe
+              </a>{" "}
+              — payments
+            </li>
+            <li>
+              <a
+                href="https://vercel.com/legal/privacy-policy"
+                className="underline"
+              >
+                Vercel
+              </a>{" "}
+              — hosting
+            </li>
+            <li>
+              <a href="https://neon.tech/privacy" className="underline">
+                Neon
+              </a>{" "}
+              — database
+            </li>
+          </ul>
+          <p className="mt-3">
+            Each service has its own privacy policy.
+          </p>
+        </Section>
 
-Website: shopifyprofit.com/contact
+        <Section title="11. Changes to This Policy">
+          We may update this Privacy Policy from time to time. We will notify
+          registered users by email of material changes. Continued use of the
+          service after changes constitutes acceptance.
+        </Section>
 
-Shopify Profit Calc is not affiliated with Shopify Inc.
+        <Section title="12. Contact">
+          <p>Questions about this Privacy Policy?</p>
+          <p className="mt-2">
+            Email:{" "}
+            <a
+              href="mailto:shoppifycalculatorprofit@gmail.com"
+              className="underline"
+            >
+              shoppifycalculatorprofit@gmail.com
+            </a>
+          </p>
+          <p className="mt-1">
+            Website:{" "}
+            <a href="https://shopifyprofit.com/contact" className="underline">
+              shopifyprofit.com/contact
+            </a>
+          </p>
+          <p className="mt-4 text-sm text-gray-500">
+            Shopify Profit Calc is not affiliated with Shopify Inc.
+          </p>
+        </Section>
+      </section>
 
-Politique de Confidentialité
-Dernière mise à jour : 23 mars 2026  ·  Contact : shoppifycalculatorprofit@gmail.com
+      <hr className="my-16 border-gray-200" />
 
-1. Introduction
-Shopify Profit Calc (« nous ») exploite shopifyprofit.com. Cette politique de confidentialité explique comment nous collectons, utilisons et protégeons vos informations lorsque vous utilisez notre service.
-2. Informations collectées
-Données de compte : adresse e-mail et mot de passe haché. Nous ne stockons jamais les mots de passe en clair.
+      {/* ───────────────────── FRANÇAIS ───────────────────── */}
+      <section id="french">
+        <h1 className="text-3xl font-bold mb-2">
+          Politique de Confidentialité
+        </h1>
+        <p className="text-sm text-gray-500 mb-10">
+          Dernière mise à jour : 23 mars 2026 &nbsp;·&nbsp; Contact :{" "}
+          <a
+            href="mailto:shoppifycalculatorprofit@gmail.com"
+            className="underline"
+          >
+            shoppifycalculatorprofit@gmail.com
+          </a>
+        </p>
 
-Données du calculateur : tous les calculs sont traités côté client dans votre navigateur. Nous ne transmettons pas vos données financières, sauf si vous êtes utilisateur Pro et sauvegardez votre historique.
+        <Section title="1. Introduction">
+          Shopify Profit Calc (« nous ») exploite shopifyprofit.com. Cette
+          politique de confidentialité explique comment nous collectons,
+          utilisons et protégeons vos informations lorsque vous utilisez notre
+          service.
+        </Section>
 
-Données de paiement : les paiements sont traités par Stripe. Nous ne stockons jamais vos informations bancaires.
+        <Section title="2. Informations collectées">
+          <p>
+            <strong>Données de compte :</strong> adresse e-mail et mot de passe
+            haché. Nous ne stockons jamais les mots de passe en clair.
+          </p>
+          <p className="mt-3">
+            <strong>Données du calculateur :</strong> tous les calculs sont
+            traités côté client dans votre navigateur. Nous ne transmettons pas
+            vos données financières, sauf si vous êtes utilisateur Pro et
+            sauvegardez votre historique.
+          </p>
+          <p className="mt-3">
+            <strong>Données de paiement :</strong> les paiements sont traités
+            par Stripe. Nous ne stockons jamais vos informations bancaires.
+          </p>
+        </Section>
 
-3. Utilisation de vos données
-Nous utilisons vos données pour :
+        <Section title="3. Utilisation de vos données">
+          <p>Nous utilisons vos données pour :</p>
+          <ul className="list-disc ml-6 mt-2 space-y-1">
+            <li>Authentifier votre compte</li>
+            <li>Envoyer des e-mails transactionnels</li>
+            <li>Fournir les fonctionnalités Pro</li>
+            <li>Améliorer notre service</li>
+          </ul>
+          <p className="mt-3">
+            Nous ne vendons pas vos données à des tiers.
+          </p>
+        </Section>
 
-Authentifier votre compte
-Envoyer des e-mails transactionnels
-Fournir les fonctionnalités Pro
-Améliorer notre service
-Nous ne vendons pas vos données à des tiers.
+        <Section title="4. Cookies">
+          Nous utilisons un seul cookie de session sécurisé pour
+          l&apos;authentification. Aucun cookie de suivi ou publicitaire tiers
+          n&apos;est utilisé.
+        </Section>
 
-4. Cookies
-Nous utilisons un seul cookie de session sécurisé pour l'authentification. Aucun cookie de suivi ou publicitaire tiers n'est utilisé.
-5. Conservation des données
-Les données de compte sont conservées tant que votre compte est actif. L'historique Pro est conservé 12 mois. En cas de suppression de compte, toutes les données sont effacées sous 30 jours.
-6. Vos droits (RGPD)
-Conformément au RGPD, vous disposez des droits suivants :
+        <Section title="5. Conservation des données">
+          Les données de compte sont conservées tant que votre compte est actif.
+          L&apos;historique Pro est conservé 12 mois. En cas de suppression de
+          compte, toutes les données sont effacées sous 30 jours.
+        </Section>
 
-Droit d'accès
-Droit de rectification
-Droit à l'effacement
-Droit à la portabilité
-Droit d'opposition
-Pour exercer ces droits : shoppifycalculatorprofit@gmail.com. Nous répondrons sous 30 jours.
+        <Section title="6. Vos droits (RGPD)">
+          <p>Conformément au RGPD, vous disposez des droits suivants :</p>
+          <ul className="list-disc ml-6 mt-2 space-y-1">
+            <li>Droit d&apos;accès</li>
+            <li>Droit de rectification</li>
+            <li>Droit à l&apos;effacement</li>
+            <li>Droit à la portabilité</li>
+            <li>Droit d&apos;opposition</li>
+          </ul>
+          <p className="mt-3">
+            Pour exercer ces droits :{" "}
+            <a
+              href="mailto:shoppifycalculatorprofit@gmail.com"
+              className="underline"
+            >
+              shoppifycalculatorprofit@gmail.com
+            </a>
+            . Nous répondrons sous 30 jours.
+          </p>
+        </Section>
 
-7. Sécurité
-Toutes les données sont chiffrées via TLS/HTTPS. Les mots de passe sont hachés avec bcrypt. Les données sont hébergées sur des serveurs sécurisés aux États-Unis.
-8. Services tiers
-Nous utilisons :
+        <Section title="7. Sécurité">
+          Toutes les données sont chiffrées via TLS/HTTPS. Les mots de passe
+          sont hachés avec bcrypt. Les données sont hébergées sur des serveurs
+          sécurisés aux États-Unis.
+        </Section>
 
-Stripe — paiements
-Vercel — hébergement
-Neon — base de données
-Chaque service dispose de sa propre politique de confidentialité.
+        <Section title="8. Services tiers">
+          <p>Nous utilisons :</p>
+          <ul className="list-disc ml-6 mt-2 space-y-1">
+            <li>Stripe — paiements</li>
+            <li>Vercel — hébergement</li>
+            <li>Neon — base de données</li>
+          </ul>
+          <p className="mt-3">
+            Chaque service dispose de sa propre politique de confidentialité.
+          </p>
+        </Section>
 
-9. Contact
-Questions ? Écrivez à : shoppifycalculatorprofit@gmail.com
+        <Section title="9. Contact">
+          <p>
+            Questions ? Écrivez à :{" "}
+            <a
+              href="mailto:shoppifycalculatorprofit@gmail.com"
+              className="underline"
+            >
+              shoppifycalculatorprofit@gmail.com
+            </a>
+          </p>
+          <p className="mt-4 text-sm text-gray-500">
+            Shopify Profit Calc n&apos;est pas affilié à Shopify Inc.
+          </p>
+        </Section>
+      </section>
+    </main>
+  );
+}
 
-Shopify Profit Calc n'est pas affilié à Shopify Inc.
+function Section({
+  title,
+  children,
+}: {
+  title: string;
+  children: React.ReactNode;
+}) {
+  return (
+    <div className="mb-8">
+      <h2 className="text-lg font-semibold mb-2">{title}</h2>
+      <div className="text-gray-700 leading-relaxed text-sm">{children}</div>
+    </div>
+  );
+}
